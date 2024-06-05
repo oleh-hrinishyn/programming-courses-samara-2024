@@ -4,7 +4,7 @@ console.log('Lesson 001');
     // place your code here for paragraph 2.4 (https://uk.javascript.info/variables)
 
 
-
+    
 })();
 
 (() => {
@@ -44,7 +44,7 @@ console.log('Lesson 001');
 
 (() => {
     // place your code here for paragraph 2.11 (https://uk.javascript.info/logical-operators)
-
+// 1. false
 
 
 })();
