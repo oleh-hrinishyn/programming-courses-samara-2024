@@ -4,8 +4,14 @@
 
 (() => {
     // place your code here
+    /*
+    function arrayElementsSum(array) {
+        let result = array.reduce((sum, current) => sum + current, 0);
+        return result;
+    }
 
-
+    alert(arrayElementsSum([1, 2, 3, 4, 5]));
+    */
 
 })();
 
@@ -16,7 +22,14 @@
 (() => {
     // place your code here
 
+    /*
+    function arrayElementsProduct(array) {
+        let result = array.reduce((product, current) => product * current);
+        return result;
+    }
 
+    alert(arrayElementsProduct([1, 2, 3, 4, 5]));
+    */
 
 })();
 
@@ -26,8 +39,16 @@
 
 (() => {
     // place your code here
+    
+    /*
+    function arrayMaximumValue(array) {
+        let result = array.reduce((max, current) => Math.max(max, current), array[0]);
+        return result;
+    }
 
 
+    alert(arrayMaximumValue([1, 2, 3, 4, 5]));
+    */
 
 })();
 
@@ -38,7 +59,15 @@
 (() => {
     // place your code here
 
+    /*
+    function arrayFlatten(array) {
+        let result = array.reduce((finished, current_part) => finished.concat(current_part));
+        console.log(result);
+        return result;
+    }
 
+    alert(arrayFlatten([[1, 2], [3, 4], [5, 6]]))
+    */
 
 })();
 
@@ -49,7 +78,17 @@
 (() => {
     // place your code here
 
+    /*
+    function occurrencesCount(array) {
+        let result = array.reduce((count, symbol) => {
+            count[symbol] = (count[symbol] || 0) + 1;
+            return count;
+        }, {})
+        return result;
+    };
 
+    console.log(occurrencesCount(['a', 'b', 'a', 'c', 'b', 'a']))
+    */
 
 })();
 
@@ -60,6 +99,20 @@
 (() => {
     // place your code here
 
+    /*
+    function groupByProperty(array) {
+        let result = array.reduce((obj, value) => {
+            if (!obj[value.type]) {
+                obj[value.type] = [];
+            }
+            obj[value.type].push(value);
+            return obj;
+        }, {})
+        return result;
+    }
+
+    console.log(groupByProperty([{type: 'fruit', name: 'apple'}, {type: 'fruit', name: 'banana'}, {type: 'vegetable', name: 'carrot'}]))
+    */
 
 
 })();
@@ -71,6 +124,22 @@
 (() => {
     // place your code here
 
+    /*
+    function sumOfSpecificProperty(array) {
+        let result = array.reduce((obj, value) => {
+            obj.push(value.price);
+            return obj;
+        }, [])
+
+        let sum = 0;
+        for (let i = 0; i < result.length; i++) {
+            sum += result[i];
+        }
+        return sum;
+    }
+
+    console.log(sumOfSpecificProperty([{price: 10}, {price: 20}, {price: 30}]))
+    */
 
 
 })();
@@ -93,6 +162,14 @@
 (() => {
     // place your code here
 
+    /*
+    function getAverageValue(array) {
+        let result = array.reduce((sum, current) => sum + current, 0) / array.length;
+        return result;
+    };
+
+    console.log(getAverageValue([10, 20, 30, 40]))
+    */
 
 
 })();
@@ -103,7 +180,6 @@
 
 (() => {
     // place your code here
-
 
 
 })();
