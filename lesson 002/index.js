@@ -1,4 +1,4 @@
-console.log('Lesson 001');
+console.log('Lesson 002');
 
 (() => {
     // place your code here for paragraph 2.4 (https://uk.javascript.info/variables)
