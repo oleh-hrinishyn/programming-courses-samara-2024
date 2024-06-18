@@ -5,7 +5,12 @@
 (() => {
     // place your code here
 
+    function SumOfArray(a) {
+        return a.reduce((b, c) => b + c, 0);
+    }
 
+    let Arr = [1, 2, 3, 4, 5];
+    alert(SumOfArray(Arr));
 
 })();
 
@@ -16,7 +21,12 @@
 (() => {
     // place your code here
 
-
+    function ProdOfArray(a) {
+        return a.reduce((b, c) => b * c, 1);
+    }
+    
+    let Arr = [1, 2, 3, 4, 5];
+    alert(ProdOfArray(Arr));
 
 })();
 
@@ -27,7 +37,12 @@
 (() => {
     // place your code here
 
+    function MaxOfArray(a) {
+        return a.reduce((b, c) => (b > c) ? b : c, a[0]);
+    }
 
+    let Arr = [3, 1, 4, 1, 5, 9];
+    alert(MaxOfArray(Arr));
 
 })();
 
@@ -38,7 +53,12 @@
 (() => {
     // place your code here
 
+    function Flanarray(a) {
+        return a.reduce((b, c) => b.concat(c), []);
+    }
 
+    let Arr = [[1, 2], [3, 4], [5, 6]];
+    alert(Flanarray(Arr));
 
 })();
 
@@ -49,7 +69,12 @@
 (() => {
     // place your code here
 
-
+    function countOccurrences(a) {
+        return a.reduce((b, c) => { b[c] = (c in b) ? b[c] + 1 : 1; return b }, {});
+    }
+    
+    let Arr = ['a', 'b', 'a', 'c', 'b', 'a'];
+    console.log(countOccurrences(Arr));
 
 })();
 
@@ -71,7 +96,15 @@
 (() => {
     // place your code here
 
-
+    function sumProperty(a, p) {
+        return a.reduce((b, c) => {
+            return b + c[p];
+        }, 0);
+    }
+    
+    let Arr = [{price: 10}, {price: 20}, {price: 30}];
+    
+    alert(sumProperty(Arr, 'price'));
 
 })();
 
@@ -82,7 +115,17 @@
 (() => {
     // place your code here
 
-
+    function removeDuplicates(a) {
+        return a.reduce((b, c) => {
+            if (b.indexOf(c) === -1) {
+                b.push(c);
+            }
+            return b;
+        }, []);
+    }
+    
+    let Arr = [1, 2, 3, 1, 2, 4];
+    console.log(removeDuplicates(Arr));
 
 })();
 
@@ -93,7 +136,12 @@
 (() => {
     // place your code here
 
+    function AverOfArray(a) {
+        return (a.reduce((b, c) => b + c, 0))/a.length;
+    }
 
+    let Arr = [10, 20, 30, 40];
+    alert(AverOfArray(Arr));
 
 })();
 
@@ -104,6 +152,11 @@
 (() => {
     // place your code here
 
-
+    function reverseString(a) {
+        return a.split('').reduce((b, c) => c + b, '');
+    }
+    
+    let string = 'hello';
+    alert(reverseString(string));
 
 })();
