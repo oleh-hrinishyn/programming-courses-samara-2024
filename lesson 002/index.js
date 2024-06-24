@@ -2,27 +2,14 @@ console.log('Lesson 001');
 
 (() => {
     // place your code here for paragraph 2.4 (https://uk.javascript.info/variables)
-  
-let admin, name;
-name = "Іван";
-admin = name;
-alert(admin);
 
-let ourPlanetName = "Земля"
-let currentUserName = "Едуард";
+
     
 })();
 
-
 (() => {
     // place your code here for paragraph 2.5 (https://uk.javascript.info/types)
-    let name = "Ілля";
 
-    alert( `привіт ${1}` ); 
-    
-    alert( `привіт ${"name"}` ); 
-    
-    alert( `привіт ${name}` ); 
 
 
 })();
